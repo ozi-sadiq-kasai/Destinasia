@@ -132,8 +132,8 @@ span.next:hover, span.prev:hover{
 }
 /* Slider End */
 
-/* NavBar */
-nav{
+
+/* nav{
  width: 100%;
  display: flex;
  justify-content: space-between;
@@ -169,7 +169,7 @@ nav #logo{
 }
 
 /* Travel  */
-main{
+/* main{
  background-color: #eff4fa;
  padding-bottom: 2rem;
 }
@@ -218,7 +218,7 @@ main{
  margin: auto;
 }
 /* Call Button */
-.material-symbols-outlined{
+/* .material-symbols-outlined{
 border: 1px solid #71677c;
 padding: 7px;
 border-radius: 50%;
@@ -237,7 +237,7 @@ background-color: rgb(104, 251, 202);
 #call{
  position: relative;
 }
-/* Form */
+
 form{
  width: 70%;
  display: flex;
@@ -263,7 +263,6 @@ input,textarea{
  margin: 5px auto;
 }
 
-/* Travel Tips Page */
 #travel-tipsmain{
  padding: 30px 50px  70px 50px;
  
@@ -298,8 +297,7 @@ input,textarea{
 
 #travel-tips ol{
  padding-left: 50px;
-}
-
+} */
 
 /* QUERIES */
 
@@ -402,11 +400,12 @@ width: 100%;
  padding-left: 0px;
 }
 }
-@media screen  and (min-width: 321px) and (max-width: 599px){
+@media screen  and (min-width: 321px) and (max-width: 414px){
  #div-logo{
  padding: 2px;
  display: flex;
  align-items: end;
+ border: 1px solid #000;
 }
 #div-logo h1{
  color: #88ccf1;
