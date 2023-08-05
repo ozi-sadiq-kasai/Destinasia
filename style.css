@@ -448,7 +448,15 @@ width: 100%;
  padding-left: 0px;
 }
 }
-/* @media screen  and (min-width: 769px) and (max-width:1279px){
+@media screen  and (min-width: 769px) and (max-width:1279px){
+ #pages{
+ display: flex;
+ list-style: none;
+ width: 50%;
+ justify-content: space-around;
+ gap: 1rem;
+ flex-wrap: nowrap;
+}
 .slide-container .slides img{
  width: 100%;
  height: 100%;
@@ -512,5 +520,5 @@ width: 100%;
 #travel-tips ol{
  padding-left: 0px;
 }
-} */
+}
 
