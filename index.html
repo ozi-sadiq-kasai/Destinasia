@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+ <title>Destinasia</title>
+</head>
+<body>
+ <nav>
+  <div id="div-logo">
+   <img src="./Images/Destinasia.png" alt="logo" id="logo">
+   <h1>Destinasia</h1>
+  </div>
+    
+     <ul id="pages">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="traveltips.html">Travel Tips</a></li>
+     </ul>
+ </nav>
+ <div class="slide-container">
+  <div class="slides">
+   <img src="./Images/manPlane.jpg" alt="man in plane" class="active">
+    <img src="./Images/blackFamily.jpg" alt="family in plane">
+    <img src="./Images/mansuitcase.jpg" alt="child in plane">
+  </div>
+   <div class="buttons">
+    <span class="next">&#10095</span>
+    <span class="prev">&#10094</span>
+   </div>
+   <div class="dotsContainer">
+    <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+    <div class="dot" attr='1' onclick="switchImage(this)"></div>
+    <div class="dot" attr='2' onclick="switchImage(this)"></div>
+   </div>
+ </div>
+ <main>
+  <section id="travel">
+   <div>
+    <h2>Discover the Ultimate Travel Experience with <span id="company-name">Destinasia!</span></h2>
+    <p>
+    Are you tired of spending countless hours searching for the perfect flights and dealing with the hassle of booking them? Let Destinasia take care of it all for you! Here's why you should choose us for your next adventure:
+    </p>
+    <ul id="travel-list">
+     <li><span>Unbeatable Expertise:</span> Our team of seasoned travel experts is dedicated to finding you the best and most budget-friendly flights available. With our insider knowledge and extensive network, we can secure exclusive deals that you won't find elsewhere.</li>
+     <li><span>Stress-Free Travel Planning:</span> Say goodbye to the stress and confusion of planning your trips. Our streamlined process ensures a seamless booking experience, leaving you with more time to focus on the exciting parts of your journey.</li>
+     <li><span> Personalized Service:</span> We understand that every traveler is unique. Whether you're a frequent jet-setter or a first-time explorer, our personalized approach ensures that your travel preferences and requirements are met to perfection.</li>
+     <li><span>Cost Savings:</span> Contrary to popular belief, using a travel agency like Destinasia can actually save you money. We have access to unpublished fares and discounted packages that can result in significant savings for your trip.</li>
+     <li><span>Peace of Mind:</span> Travel with confidence, knowing that your flights are expertly handled by professionals who care about your journey as much as you do. We'll take care of the details, so you can focus on making unforgettable memories.</li>
+    </ul>
+    <p>Join the countless satisfied travelers who have experienced the ease and joy of traveling with Destinasia. Let us be your trusted companion on your next adventure, and you'll wonder how you ever traveled without us. Embrace a new level of travel excellence with Destinasia today!</p>
+   </div>
+   <div id="call">
+     <a href="tel:+2348038482414"><span class="material-symbols-outlined">
+       phone_in_talk
+     </span></a>
+   </div>
+   <div id="map-div">
+    <img src="./Images/map.jpg" alt="map image" id="map-image">
+   </div>
+  <form action="https://formsubmit.co/Reservations@destinasia.co" method="POST">
+     <input  placeholder="Name" type="text" name="name" required>
+     <input placeholder="Email" type="email" name="email" required>
+     <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+     <button type="submit" id="submit">Send</button>
+</form>
+  </section> 
+ </main>
+
+ <script src="app.js"></script>
+</body>
+</html>
