@@ -301,13 +301,47 @@ button{
 }
 
 
-@media screen  and (max-width: 480px){
+/* QUERIES */
+
+@media screen  and (max-width: 320px){
+ #div-logo{
+ padding: 2px;
+ display: flex;
+ align-items: end;
+}
+#div-logo h1{
+ color: #88ccf1;
+ font-weight: 700;
+ font-size: 1rem;
+}
+nav #logo{
+ width: 20px;
+}
+ nav{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 5px;
+}
+.slide-container .slides img{
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ object-fit: fill;
+}
 #pages{
  display: flex;
  list-style: none;
  width: 50%;
  justify-content: space-around;
  gap: 1rem;
+}
+#pages li a{
+  text-decoration: none;
+  font-weight:700 ;
+  color: #71677c;
+  font-size: 0.7rem;
 }
 
  #travel{
@@ -369,7 +403,7 @@ width: 100%;
 }
 }
 
-@media screen  and (min-width: 481px) and (max-width: 768px){
+/* @media screen  and (min-width: 481px) and (max-width: 768px){
 #pages{
  display: flex;
  list-style: none;
@@ -452,7 +486,7 @@ width: 100%;
  #pages{
  display: flex;
  list-style: none;
- width: 50%;
+ width: 70%;
  justify-content: space-around;
  gap: 1rem;
  flex-wrap: nowrap;
@@ -521,4 +555,4 @@ width: 100%;
  padding-left: 0px;
 }
 }
-
+ */
