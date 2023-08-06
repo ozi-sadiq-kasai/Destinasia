@@ -130,48 +130,77 @@ span.next:hover, span.prev:hover{
   left: 0%
  }
 }
-/* Slider End */
-
-
-/* nav{
+/* Nav Bar */
+nav{
  width: 100%;
  display: flex;
  justify-content: space-between;
- align-items: center;
- padding: 5px 15px;
 }
 #div-logo{
- padding: 5px;
  display: flex;
- align-items: end;
+ align-items: center;
+ padding: 5px 0;
+ max-width: 30%;
 }
-#div-logo h1{
+#logo{
+ max-width: 50px;
+}
+h1{
  color: #88ccf1;
- font-weight: 700;
- font-size: 1.7rem;
-}
-nav #logo{
- width: 40px;
 }
 #pages{
+ list-style-type: none;
  display: flex;
- list-style: none;
  width: 40%;
- justify-content: space-between;
- flex-wrap: wrap;
- gap: 1rem;
+ justify-content: space-around;
+ align-items: center;
 }
 #pages li a{
-  text-decoration: none;
-  font-weight:700 ;
-  color: #71677c;
-  font-size: 1.2rem;
+ text-decoration: none;
+ font-weight: 700;
+ font-size: 1.5rem;
+ color: #555;
 }
 
-/* Travel  */
-/* main{
- background-color: #eff4fa;
- padding-bottom: 2rem;
+/* Main */
+main{
+ padding: 10px 30px 50px;
+ background-color: #EFF4FA;
+}
+#travel{
+ display: flex;
+ gap: 1rem;
+}
+#travel-header,#travel-tipsmain h2 {
+ text-align: center;
+ font-weight: 700;
+ font-size: 2.3rem;
+ color: #71677c;
+ width: 100%;
+ margin-bottom: 10px;
+}
+#travel-header span,li span, #last-paragraph span{
+ color: #88ccf1;
+}
+#travel p, li, #last-paragraph{
+ font-size: 1.3rem;
+ list-style-type: none;
+ text-align: justify;
+}
+#travel li{
+ padding-top: 10px;
+}
+#travel p, li, #last-paragraph{
+ padding-top: 10px;
+}
+#travel li:last-child{
+ margin-bottom: 10px;
+}
+
+#map-div{
+ margin-top: 2rem;
+ width: 100%;
+ height:80vh;
 }
 #map-image{
  width: 100%;
@@ -179,46 +208,57 @@ nav #logo{
  background-size: contain;
  background-position: center;  
 }
-#travel{
- padding: 20px 40px 50px 40px;
- display: grid;
- grid-template-columns:1fr;
- justify-content: center;
+form{
+ width: 70%;
+ display: flex;
+ flex-direction: column;
+ background-color: #fff;
+ margin: 0 auto;
+ padding-top: 5px;
+}
+#submit{
+color: #71677c;
+padding: 5px 20px;
+background-color: #88ccf1;
+border: none;
+margin-left: 15%;
+text-align: center;
+cursor: pointer;
+}
+#submit:focus {
+  outline: none;
+}
+input,textarea{
+ width: 70%;
+ padding: 10px;
+ margin: 5px auto;
 }
 
-#travel h2{
- text-align: center;
- padding: 10px;
- color: #6C757D;
- font-size: 1.7rem;
+/* Travel */
+#travel-tipsimage-div{
+ width: 100%;
+ height: auto;
+ margin: 0 auto;
 }
-#travel p{
- padding: 0 10px 10px 10px;
- text-align:justify ;
- color: #6C757D;
- font-size: 1.1rem;
+#travel-tipsimage-div img{
+width: 100%;
+background-size: cover;
+object-fit: fill;
+vertical-align: top;
 }
-#travel-list li{
- padding-bottom: 10px;
- padding-left: 10px;
- text-align:justify ;
- list-style: none;
- color: #6C757D;
- font-size: 1.1rem;
+#travel-tips{
+ padding: 30px 60px  50px 60px;
 }
-#travel-list li span{
- color: #212529;
- font-weight: 700;
+#travel-tipsmain{
+ padding: 5px 30px;
 }
-#company-name{
- color: #88ccf1;
-}
-#map-div{
- height: 80%;
- margin: auto;
+#travel-tipsmain li{
+ padding: 5px;
+ width: 95%;
+ margin: 0 auto;
 }
 /* Call Button */
-/* .material-symbols-outlined{
+.material-symbols-outlined{
 border: 1px solid #71677c;
 padding: 7px;
 border-radius: 50%;
@@ -238,304 +278,117 @@ background-color: rgb(104, 251, 202);
  position: relative;
 }
 
-form{
- width: 70%;
- display: flex;
- flex-direction: column;
- background-color: #fff;
- margin: 0 auto;
- padding-top: 5px;
-}
-#submit{
-color: #71677c;
-padding: 5px 20px;
-background-color: #88ccf1;
-border: none;
-margin-left: 15%;
-text-align: center;
-}
-#submit:focus {
-  outline: none;
-}
-input,textarea{
- width: 70%;
- padding: 10px;
- margin: 5px auto;
-}
-
-#travel-tipsmain{
- padding: 30px 50px  70px 50px;
- 
-}
-#travel-tipsimage-div{
- max-width: 800px;
- height: 300px;
- margin: 0 auto
-}
-#travel-tipsimage-div img{
- width: 100%;
- height: auto;
- background-size: auto;
- background-position: center; 
-}
-
-#travel-tips{
- padding: 10px;
-}
-
-#travel-tips h2{
- padding: 20px 0 10px 50px;
-}
-
-#travel-tips li{
- max-width: 80%;
- margin-bottom: 10px;
- text-align: justify;
- color: #6C757D;
- font-size: 1.1rem;
-}
-
-#travel-tips ol{
- padding-left: 50px;
-} */
-
-/* QUERIES */
-
-@media screen  and (max-width: 320px){
+/* Queries */
+@media screen and (max-width:414px){
  #div-logo{
- padding: 2px;
- display: flex;
- align-items: end;
+ padding: 5px ;
+ max-width: 40%;
 }
-#div-logo h1{
- color: #88ccf1;
- font-weight: 700;
+#logo{
+ max-width: 35px;
+}
+h1{
  font-size: 1rem;
 }
-nav #logo{
- width: 20px;
-}
- nav{
- width: 100%;
- display: flex;
- justify-content: space-between;
- align-items: center;
- padding: 5px;
-}
-.slide-container .slides img{
- width: 100%;
- height: 100%;
- position: absolute;
- object-fit: fill;
-}
-#pages{
- display: flex;
- list-style: none;
- width: 50%;
- justify-content: space-around;
- gap: 1rem;
-}
 #pages li a{
-  text-decoration: none;
-  font-weight:700 ;
-  color: #71677c;
-  font-size: 0.7rem;
+ font-size: 1rem;
 }
-
- #travel{
+/* Main */
+main{
+ padding: 10px 30px 50px;
+}
+#travel{
  display: grid;
- grid-template-columns:1fr;
- justify-content: center;
- gap: 1rem;
-}
-
-form{
- width: 100%;
- display: flex;
- flex-direction: column;
- background-color: #fff;
- padding: 10px;
-}
-button{
- margin: 10px 0  0 55px;
- width: 100px;
-}
-/* Travel Tips Page */
-#travel-tipsimage-div{
-max-height:300px;
-width: 100%;
-}
-#travel-tipsimage-div img{
- width: 100%;
- height: 100%;
- background-size: auto;
- background-position: center; 
-}
-#travel-tipsmain{
- padding: 0 ;
-}
-#travel-tips h2{
- padding: 15px 0 10px 20px;
- color: #6C757D;
- font-size: 1.7rem;
-}
-#travel-tips ol li{
- width: 100%;
- text-align: justify;
- color: #6C757D;
- font-size: 1.1rem;
- margin: 0 0 20px 40px;
-}
-#travel-tips p span{
- color:#88ccf1 ;
-}
-#travel-tips p{
- padding-left: 0px;
-  margin-bottom: 20px;
-  text-align: center;
- color: #6C757D;
- font-size: 1.1rem; 
-}
-#travel-tips ol{
- padding-left: 0px;
-}
-}
-@media screen  and (min-width: 321px) and (max-width: 414px){
- #div-logo{
- padding: 2px;
- display: flex;
- align-items: end;
- border: 1px solid #000;
-}
-#div-logo h1{
- color: #88ccf1;
- font-weight: 700;
- font-size: 1.2rem;
-}
-nav #logo{
- width: 30px;
-}
- nav{
- width: 100%;
- display: flex;
- justify-content: space-between;
- align-items: center;
- padding: 5px;
-}
-.slide-container .slides img{
- width: 100%;
- height: 100%;
- position: absolute;
- object-fit: fill;
-}
-#pages{
- display: flex;
- list-style: none;
- width: 50%;
- justify-content: space-around;
- gap: 1rem;
-}
-#pages li a{
-  text-decoration: none;
-  font-weight:700 ;
-  color: #71677c;
-  font-size: 1rem;
-}
-
- #travel{
- padding: 10px 20px;
  grid-template-columns: 1fr;
- justify-content: center;
- gap: 0rem;
 }
-
 #travel h2{
- text-align: center;
- padding: 10px;
- color: #6C757D;
- font-size: 1.7rem;
+ margin-bottom: 10px;
 }
-#travel p{
- padding: 0 10px 10px 10px;
- text-align:justify ;
- color: #6C757D;
- font-size: 1.1rem;
-}
-#travel-list li{
- padding-bottom: 10px;
- padding-left: 10px;
- text-align:justify ;
- list-style: none;
- color: #6C757D;
- font-size: 1.1rem;
-}
-#travel-list li span{
- color: #212529;
+#travel-tipsmain h2 {
  font-weight: 700;
+ font-size: 1.5rem;
+ margin-bottom: 0px;
+ padding-top: 10px;
 }
-#company-name{
- color: #88ccf1;
+#travel-tipsmain li{
+ width: 100%;
+ margin: 0 auto;
+}
+#travel-tips{
+ padding: 15px 20px;
 }
 #map-div{
- height: 80%;
- margin: auto;
-}
-
-form{
  width: 100%;
- display: flex;
- flex-direction: column;
- background-color: #fff;
- padding: 10px;
+ height: fit-content;
+ margin-top: 0rem;
 }
-button{
- margin: 10px 0  0 55px;
- width: 100px;
-}
-/* Travel Tips Page */
-#travel-tipsimage-div{
-max-height:300px;
-width: 100%;
-}
-#travel-tipsimage-div img{
+#map-image{
  width: 100%;
  height: 100%;
- background-size: auto;
- background-position: center; 
+ background-size: contain;
+ background-position: center;  
 }
-#travel-tipsmain{
- padding: 10px 25px;
+form{
+ width: 100%;
 }
-#travel-tips h2{
- padding: 0;
- padding-bottom: 10px;
- color: #6C757D;
+}
+@media screen and (max-width:320px){
+#pages li a{
+ font-size: 0.8rem;
+}
+#travel-header{
  font-size: 1.5rem;
-}
-#travel-tips li{
-  max-width: 100%;
  margin-bottom: 10px;
- color: #6C757D;
- font-size: 1.1rem;
 }
-#travel-tips p span{
- color:#88ccf1 ;
+#travel p, li{
+ font-size: 1.2rem;
 }
-#travel-tips p{
- padding-left: 0px;
- margin-bottom: 20px;
- color: #6C757D;
- font-size: 1.1rem; 
+#map-div{
+ margin-top: 0rem;
+}
+#travel li:last-child{
+ margin-bottom: 0px;
+}
+#travel-tipsmain h2 {
+ font-weight: 700;
+ font-size: 1.5rem;
+ margin-bottom: 0px;
+ padding-top: 10px;
+}
+#travel-tipsmain li{
+ padding: 5px;
+ width: 100%;
+ margin: 0 auto;
+}
+#travel-tips{
+ padding: 15px 7px;
+}
+ #last-paragraph{
+ font-size: 1.2rem;
+ list-style-type: none;
 
 }
-#travel-tips ol{
-  padding: 0 ;
+}
+@media screen and (min-width:600px) and (max-width:1024px){
+#map-div{
+ width: 100%;
+ height: fit-content;
+ margin-top: 0rem;
+}
+#travel{
+ display: grid;
+ grid-template-columns: 1fr;
 }
 }
- @media screen and (main-width:600px) and (max-width:768px){
-  #div-logo h1{
- color: #88ccf1;
- font-weight: 700;
- font-size: 2rem;
+@media screen and (max-width:1920px){
+ #map-div{
+ width: 100%;
+ height: 80vh;
+ margin-top: 0rem;
+ margin-bottom: 5px;
 }
- }
+form{
+ margin-top: 2rem;
+ padding: 10px 0;
+}
+}
